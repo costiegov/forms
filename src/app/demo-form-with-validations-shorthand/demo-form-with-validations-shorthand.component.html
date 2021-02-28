@@ -18,6 +18,20 @@
          class="ui error message">SKU is required</div>
     </div>
 
+
+    <div class="field"
+      [class.error]="!myForm.get('sku2').valid && myForm.get('sku2').touched">
+      <label for="skuInput">SKU2</label>
+      <input type="text"
+             id="sku2Input"
+             placeholder="SKU2"
+             [formControl]="myForm.controls['sku2']">
+       <div *ngIf="!myForm.controls['sku2'].valid"
+         class="ui error message">SKU2 is invalid</div>
+       <div *ngIf="myForm.controls['sku2'].hasError('required')"
+         class="ui error message">SKU2 is required</div>
+    </div>
+
     <div *ngIf="!myForm.valid"
       class="ui error message">Form is invalid</div>
 

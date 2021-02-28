@@ -27,47 +27,54 @@ import { ExampleDef } from "./example.model";
  * Here's the master list of our examples for this chapter.
  */
 export const examples: ExampleDef[] = [
-  { label: "Intro", name: "Root", path: "", component: IntroComponent },
+  { label: "Intro 1", name: "Root2", path: "", extrac:"",component: IntroComponent },
   {
-    label: "Sku",
+    label: "Sku-x",
     name: "DemoFormSku",
     path: "sku",
+    extrac:"holaaa",
     component: DemoFormSkuComponent
   },
   {
     label: "Sku (with Builder)",
     name: "DemoFormSkuWithBuilder",
     path: "sku-builder",
+    extrac:"holaaa",
     component: DemoFormSkuWithBuilderComponent
   },
   {
     label: "Validation Explicit",
     name: "DemoFormValidationsExplicit",
     path: "validations-explicit",
+    extrac:"holaaa",
     component: DemoFormWithValidationsExplicitComponent
   },
   {
     label: "Validation Shorthand",
     name: "DemoFormValidationsShorthand",
     path: "validations-shorthand",
+    extrac:"holaaa",
     component: DemoFormWithValidationsShorthandComponent
   },
   {
     label: "Custom Validation",
     name: "DemoFormWithCustomValidation",
     path: "custom-validation",
+    extrac:"holaaa",
     component: DemoFormWithCustomValidationComponent
   },
   {
     label: "Events",
     name: "DemoFormWithEvents",
     path: "events",
+    extrac:"holaaa",
     component: DemoFormWithEventsComponent
   },
   {
     label: "NgModel",
     name: "DemoFormNgModel",
     path: "ng-model",
+    extrac:"holaaa",
     component: DemoFormNgModelComponent
   }
 ];

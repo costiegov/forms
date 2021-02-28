@@ -18,7 +18,8 @@ export class DemoFormWithValidationsShorthandComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      'sku':  ['', Validators.required]
+      'sku':  ['', Validators.required],
+      'sku2':  ['', Validators.required]
     });
   }
 

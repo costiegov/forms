@@ -13,7 +13,7 @@ export class DemoFormSkuComponent implements OnInit {
   }
 
   onSubmit(form: any): void {
-    console.log('you submitted value:', form);
+    console.log('you submitted value:S+', form);
   }
 
 }

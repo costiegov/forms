@@ -11,7 +11,7 @@ export class DemoFormNgModelComponent {
   productName: string;
 
   constructor() {
-    this.productName = "ng-book: The Complete Guide to Angular"
+    this.productName = "ng-book: The Complete Guide to Angular 11"
   }
 
   onSubmit(value: string): void {

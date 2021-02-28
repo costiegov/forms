@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
-  FormGroup
+  FormGroup,
+  Validators
 } from '@angular/forms';
 
 @Component({
@@ -14,7 +15,8 @@ export class DemoFormSkuWithBuilderComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      'sku': ['ABC123']
+      'sku': ['ABC123',Validators.required],
+      'sku2': ['ABC123444']
     });
   }
 
@@ -23,6 +25,7 @@ export class DemoFormSkuWithBuilderComponent implements OnInit {
 
   onSubmit(value: string): void {
     console.log('you submitted value: ', value);
+    console.log('you submitted value: ', value.sku2);
   }
 
 }
